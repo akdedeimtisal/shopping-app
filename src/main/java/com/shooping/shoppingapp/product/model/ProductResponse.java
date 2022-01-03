@@ -1,7 +1,12 @@
 package com.shooping.shoppingapp.product.model;
 
-import java.math.BigDecimal;
+import com.shooping.shoppingapp.product.domain.MoneyType;
+import lombok.Builder;
+import lombok.Data;
 
+import java.math.BigDecimal;
+@Data
+@Builder
 public class ProductResponse {
   /*  String productCode; // name + model/
     //frontendle bağlantıyı sağlamak için ID bilinmesine gerek yok, productCode ile iletişim sağlanacak.
@@ -18,7 +23,8 @@ public class ProductResponse {
   private String deliveryIn;
   private BigDecimal price;
   private String categoryId;
-  private String moneyType;
+  private MoneyType moneyType;
+
 
 
 
